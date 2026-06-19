@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+@import "tailwindcss";
+
+@theme {
+  --font-mono: 'Space Mono', ui-monospace, "Courier New", Monaco, Consolas, monospace;
+  --color-bg: #000000;
+  --color-surface: #0F0F0F;
+  --color-surface-2: #1A1A1A;
+  --color-hover: #252525;
+  --color-white: #FFFFFF;
+  --color-off-white: #F5F5F5;
+  --color-muted: #888888;
+  --color-border-custom: rgba(255,255,255,0.08);
+  --color-error: #E5534B;
+  --color-green-custom: #22C55E;
+}
+
+:root {
+  --font-mono: 'Space Mono', ui-monospace, "Courier New", Monaco, Consolas, monospace;
+}
+
+body {
+  background-color: #000000;
+  background-image: radial-gradient(rgba(255, 255, 255, 0.08) 1px, transparent 1px);
+  background-size: 24px 24px;
+  color: #F5F5F5;
+  font-family: var(--font-mono);
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+
+/* Custom scrollbar to match terminal aesthetic */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #000000;
+}
+::-webkit-scrollbar-thumb {
+  background: #252525;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #888888;
+}
+
+/* Pulse animation for load states matching cursor */
+@keyframes cursor-pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+.animate-pulse-cursor {
+  animation: cursor-pulse 1s infinite;
+}
+
+/* Fade in for page transitions */
+.page-transition {
+  animation: fadeIn 150ms ease-out forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Custom Bento Grid Animations */
+@keyframes flow {
+  to {
+    stroke-dashoffset: -20;
+  }
+}
+
+.animate-flow-left {
+  stroke-dasharray: 5, 5;
+  animation: flow 1.2s linear infinite;
+}
+
+.animate-flow-right {
+  stroke-dasharray: 5, 5;
+  animation: flow 1.2s linear infinite reverse;
+}
+
+@keyframes scan {
+  0% { transform: translateY(-10px); }
+  50% { transform: translateY(110px); }
+  100% { transform: translateY(-10px); }
+}
+
+.animate-scanline {
+  animation: scan 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-6px); }
+}
+
+.animate-float-1 {
+  animation: float 4s ease-in-out infinite;
+}
+
+.animate-float-2 {
+  animation: float 4s ease-in-out infinite;
+  animation-delay: 0.5s;
+}
+
+.animate-float-3 {
+  animation: float 4s ease-in-out infinite;
+  animation-delay: 1s;
+}
+
+@keyframes grid-glow {
+  0%, 100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.08;
+  }
+}
+
+.animate-grid-glow {
+  animation: grid-glow 6s ease-in-out infinite;
+  opacity: 0;
+}
