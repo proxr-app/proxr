@@ -19,16 +19,26 @@ export default function Footer() {
           network status: operational
         </div>
 
-        {/* Right: X Link & Copyright */}
+        {/* Right: X, GitHub Links & Copyright */}
         <div className="flex items-center gap-6 text-xs text-muted">
-          <a
-            href="https://x.com/proxr_io"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hover:text-white transition-colors lowercase border border-border-custom hover:border-white/20 px-2 py-0.5 rounded text-[11px]"
-          >
-            x
-          </a>
+          <div className="flex items-center gap-3">
+            <a
+              href="https://x.com/proxrapp"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-white transition-colors lowercase border border-border-custom hover:border-white/20 px-2 py-0.5 rounded text-[11px]"
+            >
+              x
+            </a>
+            <a
+              href="https://github.com/proxr-app/proxr"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-white transition-colors lowercase border border-border-custom hover:border-white/20 px-2 py-0.5 rounded text-[11px]"
+            >
+              github
+            </a>
+          </div>
           <span className="text-[10px] lowercase">
             &copy; 2026 proxr
           </span>

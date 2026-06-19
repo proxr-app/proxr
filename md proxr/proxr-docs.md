@@ -627,9 +627,9 @@ All sub-products follow the naming convention: `proxr [name]` — all lowercase.
 | **Docs** | [docs.proxr.app](https://docs.proxr.app) |
 | **Blog** | [blog.proxr.app](https://blog.proxr.app) |
 | **Network Stats** | [data.proxr.app](https://data.proxr.app) |
-| **X / Twitter** | [@proxr_io](https://x.com/proxr_io) |
+| **X / Twitter** | [@proxrapp](https://x.com/proxrapp) |
 | **Telegram** | [t.me/proxr_io](https://t.me/proxr_io) |
-| **GitHub** | [github.com/proxr](https://github.com/proxr) |
+| **GitHub** | [github.com/proxr-app/proxr](https://github.com/proxr-app/proxr) |
 
 ---
 

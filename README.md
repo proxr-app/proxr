@@ -104,7 +104,7 @@ A terminal-native software development agent running on the `proxr` decentralize
 
 1.  **Clone & Install Dependencies**:
     ```bash
-    git clone https://github.com/proxr/proxr.git
+    git clone https://github.com/proxr-app/proxr.git
     cd proxr
     npm install --legacy-peer-deps
     ```
